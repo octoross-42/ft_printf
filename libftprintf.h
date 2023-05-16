@@ -6,7 +6,7 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:18:02 by octoross          #+#    #+#             */
-/*   Updated: 2023/05/09 18:24:56 by octoross         ###   ########.fr       */
+/*   Updated: 2023/05/16 19:29:06 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 # include <unistd.h>
 # include <stdarg.h>
 
-void	ft_putnbr(long n, int lowercase, long base);
-void	ft_putstr(char *s);
-void	ft_putchar(char c);
+int		ft_putnbr(long n, int lowercase, long base);
+int		ft_putstr(char *s);
+int		ft_putchar(char c);
 
 char	ft_lowercasetouppercase(char c);
 size_t	ft_strlen(char *s);
