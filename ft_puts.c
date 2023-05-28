@@ -6,7 +6,7 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:41:03 by octoross          #+#    #+#             */
-/*   Updated: 2023/05/16 20:18:56 by octoross         ###   ########.fr       */
+/*   Updated: 2023/05/28 15:20:00 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 int	ft_putnbr(long n, int lowercase, long base)
 {
-	char	hexa_base[17] = "0123456789abcdef";
 	int		len;
+
+	len = 0;
 	if (n < 0)
 	{
 		write(1, "-", 1);
@@ -25,9 +26,9 @@ int	ft_putnbr(long n, int lowercase, long base)
 	if (n >= base)
 		len += ft_putnbr(n / base, lowercase, base);
 	if (lowercase || (n % base < 10))
-		ft_putchar(hexa_base[n % base]);
+		ft_putchar(HEXA_BASE[n % base]);
 	else
-		ft_putchar(ft_lowercasetouppercase(hexa_base[n % base]));
+		ft_putchar(ft_lowercasetouppercase(HEXA_BASE[n % base]));
 	len ++;
 	return (len);
 }

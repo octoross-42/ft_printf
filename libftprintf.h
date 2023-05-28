@@ -6,13 +6,15 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:18:02 by octoross          #+#    #+#             */
-/*   Updated: 2023/05/16 19:29:06 by octoross         ###   ########.fr       */
+/*   Updated: 2023/05/28 15:20:11 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFTPRINTF_H
 
 # define LIBFTPRINTF_H
+
+#define HEXA_BASE "0123456789abcdef"
 
 # include <stdio.h>
 # include <stdlib.h>

@@ -6,7 +6,7 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:21:22 by octoross          #+#    #+#             */
-/*   Updated: 2023/05/16 20:28:30 by octoross         ###   ########.fr       */
+/*   Updated: 2023/05/28 15:18:46 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,19 +66,20 @@ int	ft_printf(const char *format, ...)
 int	main(int argc, char **argv)
 {
 	printf(NULL);
-	ft_printf(NULL);
+// 	ft_printf(NULL);
 
-	ft_printf("caca furibond\n");
-	printf("caca furibond\n");
+// 	ft_printf("caca furibond\n");
+// 	printf("caca furibond\n");
 
-	ft_printf("caca%p\n", argv[1]);
-	printf("caca%p\n", argv[1]);
+// 	ft_printf("caca%p\n", argv[1]);
+// 	printf("caca%p\n", argv[1]);
 
-	ft_printf("caca%s\n", argv[1]);
-	printf("caca%s\n", argv[1]);
+// 	ft_printf("caca%x\n", atoi(argv[1]));
+// 	printf("caca%x\n", atoi(argv[1]));
 
-	ft_printf("caca%c\n", argv[1][0]);
-	printf("caca%c\n", argv[1][0]);
+
+// 	ft_printf("caca%d\n", atoi(argv[1]));
+// 	printf("caca%d\n", atoi(argv[1]));
 
 	return (0);
 }
