@@ -6,7 +6,7 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:21:22 by octoross          #+#    #+#             */
-/*   Updated: 2023/05/16 20:28:30 by octoross         ###   ########.fr       */
+/*   Updated: 2023/05/30 17:31:20 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,13 +51,11 @@ int	ft_printf(const char *format, ...)
 	i = 0;
 	while (format[i])
 	{
-		if (format[i] == '\\')
-			ft_putchar(format[i + 1]);
-		else if (format[i] == '%')
-			len += ft_format(format[i + 1], &ap);
+		if (format[i] == '%')
+			len += ft_format(format[++i], &ap);
 		else
-			len += ft_putchar(format[i--]);
-		i += 2;
+			len += ft_putchar(format[i]);
+		i ++;
 	}
 	va_end(ap);
 	return (len);
@@ -68,17 +66,11 @@ int	main(int argc, char **argv)
 	printf(NULL);
 	ft_printf(NULL);
 
-	ft_printf("caca furibond\n");
-	printf("caca furibond\n");
 
-	ft_printf("caca%p\n", argv[1]);
-	printf("caca%p\n", argv[1]);
+	printf("%x\n", -42);
+	ft_printf("%x\n", -42);
 
-	ft_printf("caca%s\n", argv[1]);
-	printf("caca%s\n", argv[1]);
-
-	ft_printf("caca%c\n", argv[1][0]);
-	printf("caca%c\n", argv[1][0]);
-
+	printf("%d\n", -42);
+	ft_printf("%d\n", -42);
 	return (0);
 }
