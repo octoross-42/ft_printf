@@ -6,7 +6,7 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:21:22 by octoross          #+#    #+#             */
-/*   Updated: 2023/06/07 16:21:10 by octoross         ###   ########.fr       */
+/*   Updated: 2023/06/07 16:31:04 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,8 +79,10 @@ int	ft_printf(const char *format, ...)
 	i = 0;
 	while (format[i])
 	{
-		if (format[i] == '%')
-			len += ft_format(format[i ++], &ap, &i);
+		if (format[i] == '\\')
+			ft_putchar(format[i + 1]);
+		else if (format[i] == '%')
+			len += ft_format(format[i + 1], &ap);
 		else
 			len += ft_putchar(format[i]);
 		i ++;
