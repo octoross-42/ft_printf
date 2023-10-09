@@ -6,7 +6,7 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:41:03 by octoross          #+#    #+#             */
-/*   Updated: 2023/10/09 15:40:30 by octoross         ###   ########.fr       */
+/*   Updated: 2023/10/09 15:42:52 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,10 @@ int	ft_putnbr(long long n, int uppercase, long long base, int p)
 	int				len;
 	unsigned long	l;
 
-	len = 0;
 	if (p && n == 0)
 		return (write(1, "(nil)", 5));
+	l = n;
+	len = 0;
 	if (p)
 		len += write(1, "0x", 2);
 	if (n < 0 && base == 10)
