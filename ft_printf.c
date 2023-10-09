@@ -6,7 +6,7 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:21:22 by octoross          #+#    #+#             */
-/*   Updated: 2023/10/09 13:58:54 by octoross         ###   ########.fr       */
+/*   Updated: 2023/10/09 14:21:58 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,17 +44,17 @@ static int	ft_format(char c, va_list *ap, int *i)
 	else if (c == 's')
 		return (ft_putstr(va_arg(*ap, char *)));
 	else if (c == 'p')
-		return (ft_putnbr(va_arg(*ap, unsigned long), 1, 16, 1));
+		return (ft_putnbr(va_arg(*ap, unsigned long), 0, 16, 1));
 	else if (c == 'd')
-		return (ft_putnbr(va_arg(*ap, int), 1, 10, 0));
+		return (ft_putnbr(va_arg(*ap, int), 0, 10, 0));
 	else if (c == 'i')
-		return (ft_putnbr(va_arg(*ap, int), 1, 10, 0));
+		return (ft_putnbr(va_arg(*ap, int), 0, 10, 0));
 	else if (c == 'u')
-		return (ft_putnbr(va_arg(*ap, unsigned int), 1, 10, 0));
+		return (ft_putnbr(va_arg(*ap, unsigned int), 0, 10, 0));
 	else if (c == 'x')
-		return (ft_putnbr(va_arg(*ap, int), 1, 16, 0));
-	else if (c == 'X')
 		return (ft_putnbr(va_arg(*ap, int), 0, 16, 0));
+	else if (c == 'X')
+		return (ft_putnbr(va_arg(*ap, int), 1, 16, 0));
 	else if (c == '%')
 		return (ft_putchar('%'));
 	else
@@ -90,11 +90,12 @@ int	ft_printf(const char *format, ...)
 
 // int	main(void)
 // {
-// 	printf("%p\n",NULL);
-// 	ft_printf("%p\n", NULL);
-// 	printf("%x\n", -42);
-// 	ft_printf("%x\n", -42);
-// 	printf("%d\n", -42);
-// 	ft_printf("%d\n", -42);
+// 	// printf("%p\n",NULL);
+// 	// ft_printf("%p\n", NULL);
+// 	// printf("%x\n", -42);
+// 	// ft_printf("%x\n", -42);
+// 	// printf("%d\n", -42);
+// 	// ft_printf("%d\n", -42);
+
 // 	return (0);
 // }
