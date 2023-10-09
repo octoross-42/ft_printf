@@ -6,11 +6,7 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:21:22 by octoross          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2023/05/30 17:31:20 by octoross         ###   ########.fr       */
-=======
-/*   Updated: 2023/05/28 15:18:46 by octoross         ###   ########.fr       */
->>>>>>> refs/remotes/origin/main
+/*   Updated: 2023/10/09 12:25:47 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,27 +64,9 @@ int	ft_printf(const char *format, ...)
 int	main(int argc, char **argv)
 {
 	printf(NULL);
-// 	ft_printf(NULL);
-
-<<<<<<< HEAD
-
+	ft_printf(NULL);
 	printf("%x\n", -42);
 	ft_printf("%x\n", -42);
-=======
-// 	ft_printf("caca furibond\n");
-// 	printf("caca furibond\n");
-
-// 	ft_printf("caca%p\n", argv[1]);
-// 	printf("caca%p\n", argv[1]);
-
-// 	ft_printf("caca%x\n", atoi(argv[1]));
-// 	printf("caca%x\n", atoi(argv[1]));
-
-
-// 	ft_printf("caca%d\n", atoi(argv[1]));
-// 	printf("caca%d\n", atoi(argv[1]));
->>>>>>> refs/remotes/origin/main
-
 	printf("%d\n", -42);
 	ft_printf("%d\n", -42);
 	return (0);
