@@ -6,11 +6,11 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:41:03 by octoross          #+#    #+#             */
-/*   Updated: 2023/10/09 14:20:40 by octoross         ###   ########.fr       */
+/*   Updated: 2023/10/09 14:24:25 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 long	ft_cast_hex(int n)
 {

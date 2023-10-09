@@ -6,11 +6,11 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:21:22 by octoross          #+#    #+#             */
-/*   Updated: 2023/10/09 14:21:58 by octoross         ###   ########.fr       */
+/*   Updated: 2023/10/09 14:24:20 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 static int	ft_error_format(const char *format)
 {

@@ -6,11 +6,11 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:53:51 by octoross          #+#    #+#             */
-/*   Updated: 2023/05/09 18:25:43 by octoross         ###   ########.fr       */
+/*   Updated: 2023/10/09 14:24:28 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 size_t	ft_strlen(char *s)
 {
