@@ -6,7 +6,7 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:18:02 by octoross          #+#    #+#             */
-/*   Updated: 2023/10/09 13:56:41 by octoross         ###   ########.fr       */
+/*   Updated: 2023/10/09 14:17:11 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 # define LIBFTPRINTF_H
 
-# define HEXA_BASE "0123456789abcdef"
-
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
 
-int		ft_putnbr(long n, int lowercase, long base, int p);
+int		ft_putnbr(long n, int uppercase, long base, int p);
 int		ft_putstr(char *s);
 int		ft_putchar(char c);
 
