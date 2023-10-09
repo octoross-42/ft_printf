@@ -6,7 +6,7 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:41:03 by octoross          #+#    #+#             */
-/*   Updated: 2023/10/09 15:38:50 by octoross         ###   ########.fr       */
+/*   Updated: 2023/10/09 15:40:30 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int	ft_putposnbr(unsigned long n, int uppercase, unsigned long base)
 	else
 		ft_putchar(('a' + (n % base - 10) + uppercase * ('A' - 'a')));
 	len ++;
+	return (len);
 }
 
 int	ft_putnbr(long long n, int uppercase, long long base, int p)
