@@ -6,7 +6,7 @@
 /*   By: octoross <octoross@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:21:22 by octoross          #+#    #+#             */
-/*   Updated: 2023/10/09 14:24:20 by octoross         ###   ########.fr       */
+/*   Updated: 2023/10/09 15:39:04 by octoross         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,15 +87,3 @@ int	ft_printf(const char *format, ...)
 	va_end(ap);
 	return (len);
 }
-
-// int	main(void)
-// {
-// 	// printf("%p\n",NULL);
-// 	// ft_printf("%p\n", NULL);
-// 	// printf("%x\n", -42);
-// 	// ft_printf("%x\n", -42);
-// 	// printf("%d\n", -42);
-// 	// ft_printf("%d\n", -42);
-
-// 	return (0);
-// }
